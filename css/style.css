@@ -1,0 +1,24 @@
+body {
+  background-image: url("/images/background.jpg");
+  background-attachment: fixed;
+  width: auto;
+}
+
+#wrapper {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  margin-top: 8em;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  padding: 30px;
+  font-family: 'Lato', 'Helvetica', sans-serif;
+}
+
+#wrapper h1 {
+  padding-top: 80px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 3.5em;
+}
