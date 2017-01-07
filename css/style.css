@@ -8,49 +8,28 @@
 }
 
 .banner {
-  width: 800px;
-  text-align: center;
-}
-
-.banner h1 {
-  font-family: 'Scope One', serif;
-  text-transform: uppercase;
-  letter-spacing: 0.275em;
-  font-size: 2.75em;
-}
-
-.banner h2 {
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-  letter-spacing: 0.1em;
+  font-family: 'Cutive Mono', monospace;
   text-transform: lowercase;
+  width: 800px;
+  text-align: left;
 }
 
 .frontnav {
   display: flex;
-  align-items: center;
-  margin: auto;
-  height: 50px;
-  text-align: right;
-}
-
-.frontnav span {
-  flex-grow: 1;
+  align-items: left;
+  text-align: left;
 }
 
 .frontnav ul {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cutive Mono', monospace;
   list-style: none;
-  padding-left: 0px;
+  margin-left: -20px;
 }
 
 .frontnav li {
   display: inline-block;
-  align-content: space-between;
-  font-size: 1em;
-  letter-spacing: 0.1em;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: -20px;
+  margin-right: 50px;
 }
 
 .frontnav li a {
@@ -59,7 +38,8 @@
 }
 
 .frontnav li a:hover {
-  color: crimson;
+  color: white;
+  background-color: crimson;
   text-decoration: underline;
 }
 
@@ -73,10 +53,8 @@
 }
 
 .nav h1 {
-  font-family: 'Scope One', serif;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 1.5em;
+  font-family: 'Cutive Mono', monospace;
+  text-transform: lowercase;
 }
 
 .nav h1 a {
@@ -89,7 +67,7 @@
 }
 
 .nav ul {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cutive Mono', monospace;
   list-style: none;
   padding-left: 0px;
 }
@@ -97,7 +75,6 @@
 .nav li {
   display: inline-block;
   align-content: space-between;
-  font-size: 1em;
   letter-spacing: 0.1em;
   margin-left: 20px;
 }
@@ -108,26 +85,41 @@
 }
 
 .nav li a:hover {
-  color: crimson;
+  color: white;
+  background-color: crimson;
   text-decoration: underline;
 }
 
 .content {
-  width: 800px;
+  width: 600px;
   margin: auto;
 }
 
 .content h1 {
-  font-family: 'Scope One', serif;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
   font-size: 1.4em;
+  font-family: 'Cutive Mono', monospace;
+  text-transform: lowercase;
+}
+
+.content h3 {
+  font-size: 1em;
+  font-family: 'Cutive Mono', monospace;
+  text-transform: lowercase;
 }
 
 .content p {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8em;
-  letter-spacing: 0.05em;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+.content ol {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 0.85em;
   line-height: 1.5;
 }
 
@@ -153,10 +145,10 @@
 }
 
 .socialmedia {
+  display: flex;
   width: 800px;
   margin: auto;
-  display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .socialmedia span {
@@ -182,48 +174,26 @@
   text-decoration: none;
 }
 
-.socialmedia img {
-  margin: 0;
+.socialmedia a:hover {
+  color: white;
+  background-color: crimson;
+}
+
+.arena {
+  margin-left: 0.5em;
+  margin-bottom: 2px;
   width: 1em;
+  height: 0.6em;
+  background: url(/images/aredotna.svg) no-repeat;
 }
 
-@keyframes fade {
-  0%   { opacity: 0; }
-  14.285%   { opacity: 1; }
-  33.33%  { opacity: 1; }
-  47.619%  { opacity: 0; }
-  100% { opacity: 0; }
+.arena:hover {
+  background: url(/images/inv_aredotna.svg) no-repeat;
+  background-color: crimson;
 }
 
-.fadein {
-  display: inline-block;
-  position: relative;
-  width: 480px;
-  height: 330px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+#instagram {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5vw;
 }
-
-.fadein img {  
-  position:absolute;
-  width: 100%;
-  left:0;
-  right:0;
-  opacity:0;
-  animation-name: fade; 
-  animation-duration: 21s; 
-  animation-iteration-count: infinite; 
-}
-
-.fadein img:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.fadein img:nth-child(2) {
-  animation-delay: 7s;
-}
-
-.fadein img:nth-child(3) {
-  animation-delay: 14s;
-}
-

@@ -3,12 +3,21 @@
   <head>
 
     <meta charset="utf-8">
-    <title>stsutsui.io/about</title>
+    <title>stsutsui.io/media</title>
     <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cutive Mono" rel="stylesheet">
     <script src="https://use.fontawesome.com/891e3522c5.js"></script>
-
+    <script type="text/javascript" src="/scripts/instafeed.js"></script>
+    <script type="text/javascript">
+            var feed = new Instafeed({
+                get: 'user',
+                userId: '26058147',
+                template: '<a class="gallery" href="{{link}}"><img src="{{image}}" /></a>'
+            });
+            feed.run();
+    </script>
+    
   </head>
   
   <body>
@@ -29,26 +38,13 @@
     
     <div class="content">
     
-      <h1>About</h1>
+      <h1>Media</h1>
       <hr />
       
-      <br />
-      
-      <img alt="me" src="/images/headshot.png">
-      
-      <br />
-      
-      <p>Hello! My name is Shawn. I am...</p>
-      
-      <ol>
-        <li>Currently, a first-year medical student at the <a href="https://med.virginia.edu">University of Virginia School of Medicine</a> [Charlottesville, VA].</li><br />
-        
-        <li>A graduate of <a href="https://www.brown.edu">Brown University</a> [Providence, RI] with an Sc.B. in Applied Mathematics.</li><br />
-        
-        <li>Interested in mathematical modeling of biological systems. Also a lot of other stuff.</li>
-      </ol>
-      
-      <p>Find me elsewhere on the internet:</p>
+      <h3>Under construction!</h3>
+      <p>Please check back later.</p>
+    
+      <div id="instafeed"></div>
       
       <hr />
       
