@@ -133,10 +133,18 @@
   text-decoration: underline;
 }
 
-.content img {
+.photo {
+  display: block;
+  width: 100%;
+  margin: auto;
+  pointer-events: none;
+}
+
+.portrait {
   display: block;
   width: 20%;
   margin: auto;
+  pointer-events: none;
 }
 
 .content hr {
@@ -190,10 +198,4 @@
 .arena:hover {
   background: url(/images/inv_aredotna.svg) no-repeat;
   background-color: crimson;
-}
-
-#instagram {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -0.5vw;
 }
